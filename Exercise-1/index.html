@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriRent - Farm Equipment Rentals</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+
+    <header class="bg-white  py-4 px-8 flex justify-between items-center">
+        <div class="text-2xl font-bold text-green-600 flex items-center gap-2">
+            🚜 <span>AgriRent</span>
+        </div>
+        
+        <nav class="hidden md:flex space-x-6 font-medium text-gray-600">
+            <a href="#" class="hover:text-green-600">Home</a>
+            <a href="#" class="text-green-600 border-b-2 border-green-600">Browse Equipment</a>
+            <a href="#" class="hover:text-green-600">How it Works</a>
+            <a href="#" class="hover:text-green-600">My Bookings</a>
+        </nav>
+
+        <div class="flex items-center space-x-4">
+            <a href="#" class="text-gray-600 hover:text-green-600 font-medium">Log In</a>
+            <button class="bg-green-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-green-700">
+                List Equipment
+            </button>
+        </div>
+    </header>
+
+    <section class="bg-gradient-to-r from-green-700 to-green-600 text-white text-center py-16 px-4">
+        <h1 class="text-4xl font-bold mb-3">Rent High-Quality Farm Machinery</h1>
+        <p class="text-green-100 text-lg mb-8">Save money, increase yield. Access premium equipment right in your locality.</p>
+        
+        <div class="bg-white p-3 rounded-xl shadow-md max-w-3xl mx-auto flex flex-col sm:flex-row gap-3">
+            <input type="text" placeholder="📍 Your location..." class="flex-1 p-3 text-gray-700 border rounded-lg focus:outline-none focus:border-green-500">
+            <input type="text" placeholder="📅 Select dates..." class="flex-1 p-3 text-gray-700 border rounded-lg focus:outline-none focus:border-green-500">
+            <button class="bg-green-600 text-white px-6 py-3 rounded-lg font-bold hover:bg-green-700 transition">
+                Search Machinery
+            </button>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 mt-10">
+        <div class="flex flex-wrap gap-3 justify-start sm:justify-items-start">
+            <button class="bg-green-600 text-white px-5 py-2 rounded-full font-medium">All Machinery</button>
+            <button class="bg-white border border-gray-300 hover:border-green-500 px-5 py-2 rounded-full font-medium">Tractors</button>
+            <button class="bg-white border border-gray-300 hover:border-green-500 px-5 py-2 rounded-full font-medium">Harvesters</button>
+            <button class="bg-white border border-gray-300 hover:border-green-500 px-5 py-2 rounded-full font-medium">Tillage & Plows</button>
+            <button class="bg-white border border-gray-300 hover:border-green-500 px-5 py-2 rounded-full font-medium">Seeding Equipment</button>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-4 my-10">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold">Available Equipment Near You</h2>
+            <span class="text-gray-500 text-sm">Showing 4 results</span>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+            
+            <div class="bg-white rounded-xl shadow-sm border overflow-hidden relative">
+                <span class="absolute top-3 left-3 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">AVAILABLE</span>
+                <img src="assets\John Deere Tractor.jfif" alt="John Deere Tractor" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg">John Deere Tractor</h3>
+                    <p class="text-gray-500 text-sm mb-3">Heavy Duty - 50 HP</p>
+                    <button class="w-full bg-green-600 text-white font-semibold py-2 rounded-lg hover:bg-green-700">Rent Now</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border overflow-hidden relative">
+                <span class="absolute top-3 left-3 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">AVAILABLE</span>
+                <img src="assets\Combine Harvester.jfif" alt="Combine Harvester" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg">Combine Harvester</h3>
+                    <p class="text-gray-500 text-sm mb-3">High Efficiency</p>
+                    <button class="w-full bg-green-600 text-white font-semibold py-2 rounded-lg hover:bg-green-700">Rent Now</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border overflow-hidden relative">
+                <span class="absolute top-3 left-3 bg-amber-500 text-white text-xs font-bold px-2 py-1 rounded">RESERVED TODAY</span>
+                <img src="assets\Tillage Equipment.jfif" alt="Disc Plow" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg">Disc Plow</h3>
+                    <p class="text-gray-500 text-sm mb-3">Tillage Equipment</p>
+                    <button class="w-full bg-gray-300 text-gray-600 font-semibold py-2 rounded-lg cursor-not-allowed" disabled>Unavailable</button>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border overflow-hidden relative">
+                <span class="absolute top-3 left-3 bg-green-500 text-white text-xs font-bold px-2 py-1 rounded">AVAILABLE</span>
+                <img src="assets\Seeding Drill.jfif" alt="Seeding Drill" class="w-full h-48 object-cover">
+                <div class="p-4">
+                    <h3 class="font-bold text-lg">Seeding Drill</h3>
+                    <p class="text-gray-500 text-sm mb-3">Precision Row Seeder</p>
+                    <button class="w-full bg-green-600 text-white font-semibold py-2 rounded-lg hover:bg-green-700">Rent Now</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>
